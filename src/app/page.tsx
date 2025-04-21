@@ -1,9 +1,9 @@
-import Image from "next/image"
-import Link from "next/link"
-import { ArrowRight, Calendar, Mail, MapPin, Phone } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight, Calendar, Mail, MapPin, Phone } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function Home() {
   return (
@@ -16,19 +16,34 @@ export default function Home() {
             <span className="text-muted-foreground">Studio</span>
           </div>
           <nav className="hidden md:flex gap-6">
-            <Link href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              href="#about"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               About
             </Link>
-            <Link href="#gallery" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              href="#gallery"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Gallery
             </Link>
-            <Link href="#lessons" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              href="#lessons"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Lessons
             </Link>
-            <Link href="#testimonials" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              href="#testimonials"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Testimonials
             </Link>
-            <Link href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              href="#contact"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Contact
             </Link>
           </nav>
@@ -51,10 +66,13 @@ export default function Home() {
             />
           </div>
           <div className="container relative z-10 flex flex-col items-center justify-center py-24 text-center md:py-32">
-            <h1 className="font-serif text-4xl font-bold tracking-tight md:text-6xl">Discover the Artist Within</h1>
+            <h1 className="font-serif text-4xl font-bold tracking-tight md:text-6xl">
+              Discover the Artist Within
+            </h1>
             <p className="mt-6 max-w-2xl text-xl text-muted-foreground">
-              Professional artist offering personalized art lessons for all skill levels. Transform your creativity
-              through expert guidance and inspiration.
+              Professional artist offering personalized art lessons for all
+              skill levels. Transform your creativity through expert guidance
+              and inspiration.
             </p>
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               <Button size="lg" asChild>
@@ -82,16 +100,21 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h2 className="font-serif text-3xl font-bold tracking-tight md:text-4xl">About the Artist</h2>
+                <h2 className="font-serif text-3xl font-bold tracking-tight md:text-4xl">
+                  About the Artist
+                </h2>
                 <p className="mt-6 text-lg text-muted-foreground">
-                  With over 15 years of experience in various artistic mediums, I've dedicated my life to creating and
-                  teaching art. My work has been featured in galleries across the country, and I've helped hundreds of
-                  students discover their unique artistic voice.
+                  With over 15 years of experience in various artistic mediums,
+                  I&apos;ve dedicated my life to creating and teaching art. My work
+                  has been featured in galleries across the country, and I&apos;ve
+                  helped hundreds of students discover their unique artistic
+                  voice.
                 </p>
                 <p className="mt-4 text-lg text-muted-foreground">
-                  My teaching philosophy centers on personalized instruction that adapts to your learning style and
-                  goals. Whether you're a complete beginner or looking to refine advanced techniques, my lessons will
-                  help you grow as an artist.
+                  My teaching philosophy centers on personalized instruction
+                  that adapts to your learning style and goals. Whether you&apos;re a
+                  complete beginner or looking to refine advanced techniques, my
+                  lessons will help you grow as an artist.
                 </p>
                 <div className="mt-8">
                   <Button variant="outline" asChild>
@@ -107,14 +130,20 @@ export default function Home() {
         <section id="gallery" className="py-16 md:py-24">
           <div className="container">
             <div className="flex flex-col items-center text-center">
-              <h2 className="font-serif text-3xl font-bold tracking-tight md:text-4xl">Gallery</h2>
+              <h2 className="font-serif text-3xl font-bold tracking-tight md:text-4xl">
+                Gallery
+              </h2>
               <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-                Browse through a selection of my artwork spanning various styles and techniques.
+                Browse through a selection of my artwork spanning various styles
+                and techniques.
               </p>
             </div>
             <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {[1, 2, 3, 4, 5, 6].map((item) => (
-                <div key={item} className="group relative aspect-square overflow-hidden rounded-lg">
+                <div
+                  key={item}
+                  className="group relative aspect-square overflow-hidden rounded-lg"
+                >
                   <Image
                     src={`/placeholder.svg?height=400&width=400&text=Artwork ${item}`}
                     alt={`Artwork ${item}`}
@@ -137,9 +166,12 @@ export default function Home() {
         <section id="lessons" className="bg-muted/50 py-16 md:py-24">
           <div className="container">
             <div className="flex flex-col items-center text-center">
-              <h2 className="font-serif text-3xl font-bold tracking-tight md:text-4xl">Art Lessons</h2>
+              <h2 className="font-serif text-3xl font-bold tracking-tight md:text-4xl">
+                Art Lessons
+              </h2>
               <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-                Personalized instruction tailored to your skill level and artistic goals.
+                Personalized instruction tailored to your skill level and
+                artistic goals.
               </p>
             </div>
             <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -148,9 +180,12 @@ export default function Home() {
                   <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                     <Calendar className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="font-serif text-xl font-bold">Private Lessons</h3>
+                  <h3 className="font-serif text-xl font-bold">
+                    Private Lessons
+                  </h3>
                   <p className="mt-2 text-muted-foreground">
-                    One-on-one instruction focused entirely on your needs and goals. Perfect for rapid improvement.
+                    One-on-one instruction focused entirely on your needs and
+                    goals. Perfect for rapid improvement.
                   </p>
                   <ul className="mt-4 space-y-2">
                     <li className="flex items-center">
@@ -178,9 +213,12 @@ export default function Home() {
                   <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                     <Calendar className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="font-serif text-xl font-bold">Group Workshops</h3>
+                  <h3 className="font-serif text-xl font-bold">
+                    Group Workshops
+                  </h3>
                   <p className="mt-2 text-muted-foreground">
-                    Learn alongside others in a collaborative environment. Great for social learners.
+                    Learn alongside others in a collaborative environment. Great
+                    for social learners.
                   </p>
                   <ul className="mt-4 space-y-2">
                     <li className="flex items-center">
@@ -208,9 +246,12 @@ export default function Home() {
                   <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                     <Calendar className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="font-serif text-xl font-bold">Online Lessons</h3>
+                  <h3 className="font-serif text-xl font-bold">
+                    Online Lessons
+                  </h3>
                   <p className="mt-2 text-muted-foreground">
-                    Learn from anywhere with virtual instruction. Convenient and effective.
+                    Learn from anywhere with virtual instruction. Convenient and
+                    effective.
                   </p>
                   <ul className="mt-4 space-y-2">
                     <li className="flex items-center">
@@ -241,9 +282,12 @@ export default function Home() {
         <section id="testimonials" className="py-16 md:py-24">
           <div className="container">
             <div className="flex flex-col items-center text-center">
-              <h2 className="font-serif text-3xl font-bold tracking-tight md:text-4xl">Student Testimonials</h2>
+              <h2 className="font-serif text-3xl font-bold tracking-tight md:text-4xl">
+                Student Testimonials
+              </h2>
               <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-                Hear what my students have to say about their learning experience.
+                Hear what my students have to say about their learning
+                experience.
               </p>
             </div>
             <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -251,17 +295,17 @@ export default function Home() {
                 {
                   name: "Sarah Johnson",
                   quote:
-                    "The private lessons transformed my approach to painting. I've learned techniques I never thought I could master!",
+                    "The private lessons transformed my approach to painting. I&apos;ve learned techniques I never thought I could master!",
                 },
                 {
                   name: "Michael Chen",
                   quote:
-                    "The group workshops are both fun and educational. I've made great friends while improving my artistic skills.",
+                    "The group workshops are both fun and educational. I&apos;ve made great friends while improving my artistic skills.",
                 },
                 {
                   name: "Emma Williams",
                   quote:
-                    "Even through online lessons, the instruction is clear and helpful. I've made tremendous progress in just a few months.",
+                    "Even through online lessons, the instruction is clear and helpful. I&apos;ve made tremendous progress in just a few months.",
                 },
               ].map((testimonial, index) => (
                 <Card key={index}>
@@ -269,14 +313,18 @@ export default function Home() {
                     <div className="flex flex-col items-center text-center">
                       <div className="relative h-16 w-16 overflow-hidden rounded-full">
                         <Image
-                          src={`/placeholder.svg?height=100&width=100&text=${testimonial.name.charAt(0)}`}
+                          src={`/placeholder.svg?height=100&width=100&text=${testimonial.name.charAt(
+                            0
+                          )}`}
                           alt={testimonial.name}
                           fill
                           className="object-cover"
                         />
                       </div>
                       <h3 className="mt-4 font-medium">{testimonial.name}</h3>
-                      <p className="mt-2 text-muted-foreground">"{testimonial.quote}"</p>
+                      <p className="mt-2 text-muted-foreground">
+                        {`"${testimonial.quote}"`}
+                      </p>
                     </div>
                   </CardContent>
                 </Card>
@@ -286,7 +334,10 @@ export default function Home() {
         </section>
 
         {/* Sign Up Section */}
-        <section id="signup" className="bg-primary text-primary-foreground py-16 md:py-24">
+        <section
+          id="signup"
+          className="bg-primary text-primary-foreground py-16 md:py-24"
+        >
           <div className="container">
             <div className="grid gap-12 md:grid-cols-2 items-center">
               <div>
@@ -294,8 +345,8 @@ export default function Home() {
                   Ready to Begin Your Artistic Journey?
                 </h2>
                 <p className="mt-4 text-lg text-primary-foreground/80">
-                  Fill out the form to book a lesson or inquire about availability. I'll get back to you within 24
-                  hours.
+                  Fill out the form to book a lesson or inquire about
+                  availability. I&apos;ll get back to you within 24 hours.
                 </p>
                 <div className="mt-8 space-y-4">
                   <div className="flex items-center gap-3">
@@ -316,7 +367,10 @@ export default function Home() {
                 <form className="space-y-4">
                   <div className="grid gap-4 sm:grid-cols-2">
                     <div className="space-y-2">
-                      <label htmlFor="first-name" className="text-sm font-medium">
+                      <label
+                        htmlFor="first-name"
+                        className="text-sm font-medium"
+                      >
                         First Name
                       </label>
                       <input
@@ -326,7 +380,10 @@ export default function Home() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="last-name" className="text-sm font-medium">
+                      <label
+                        htmlFor="last-name"
+                        className="text-sm font-medium"
+                      >
                         Last Name
                       </label>
                       <input
@@ -359,7 +416,10 @@ export default function Home() {
                     />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="lesson-type" className="text-sm font-medium">
+                    <label
+                      htmlFor="lesson-type"
+                      className="text-sm font-medium"
+                    >
                       Lesson Type
                     </label>
                     <select
@@ -396,9 +456,12 @@ export default function Home() {
         <section id="contact" className="py-16 md:py-24">
           <div className="container">
             <div className="flex flex-col items-center text-center">
-              <h2 className="font-serif text-3xl font-bold tracking-tight md:text-4xl">Visit the Studio</h2>
+              <h2 className="font-serif text-3xl font-bold tracking-tight md:text-4xl">
+                Visit the Studio
+              </h2>
               <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-                Come see where the magic happens and discuss your artistic journey in person.
+                Come see where the magic happens and discuss your artistic
+                journey in person.
               </p>
               <div className="mt-8 aspect-video w-full max-w-3xl overflow-hidden rounded-lg">
                 <Image
@@ -432,19 +495,34 @@ export default function Home() {
             <span className="text-muted-foreground">Studio</span>
           </div>
           <nav className="flex gap-6">
-            <Link href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              href="#about"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               About
             </Link>
-            <Link href="#gallery" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              href="#gallery"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Gallery
             </Link>
-            <Link href="#lessons" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              href="#lessons"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Lessons
             </Link>
-            <Link href="#testimonials" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              href="#testimonials"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Testimonials
             </Link>
-            <Link href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              href="#contact"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Contact
             </Link>
           </nav>
@@ -454,5 +532,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
