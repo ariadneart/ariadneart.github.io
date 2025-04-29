@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ariadne Art – Portfolio & Painting Instruction
 
-## Getting Started
+Welcome to the GitHub repository for [Ariadne Art](https://ariadneart.github.io/), the online home of my art and painting teaching business. This site serves as both a **professional portfolio** and a **resource hub** for students and art enthusiasts.
 
-First, run the development server:
+🎨 **Explore my work**  
+🖌️ **Learn about my teaching style and offerings**  
+📬 **Get in touch for classes, workshops, or commissions**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌐 Visit the Site
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+👉 [https://ariadneart.github.io/](https://ariadneart.github.io/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 About This Repository
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This repository powers my GitHub Pages site. It contains:
 
-## Learn More
+- A showcase of my original artwork  
+- Information about my teaching services  
+- Contact details for inquiries and collaborations  
 
-To learn more about Next.js, take a look at the following resources:
+## 🤝 Connect With Me
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+If you're interested in private lessons, group workshops, or just want to chat about art, feel free to reach out through the contact section on the website.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Thanks for visiting and supporting independent artists!
