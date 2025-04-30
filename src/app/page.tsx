@@ -12,7 +12,7 @@ export default function Home() {
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2 font-serif text-xl font-bold">
-            <span className="text-primary">ArtistName</span>
+            <span className="text-primary">Ariadne</span>
             <span className="text-muted-foreground">Studio</span>
           </div>
           <nav className="hidden md:flex gap-6">
@@ -58,7 +58,8 @@ export default function Home() {
         <section className="relative">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/placeholder.svg?height=800&width=1600"
+              src={`https://picsum.photos/1600/800`}
+              // src="/placeholder.svg?height=800&width=1600"
               alt="Artist painting"
               fill
               className="object-cover opacity-20"
@@ -93,7 +94,8 @@ export default function Home() {
             <div className="grid gap-12 md:grid-cols-2 md:gap-16 items-center">
               <div className="relative aspect-square overflow-hidden rounded-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=600"
+                  src={`https://picsum.photos/600/600`}
+                  // src="/placeholder.svg?height=600&width=600"
                   alt="Artist portrait"
                   fill
                   className="object-cover"
@@ -105,16 +107,16 @@ export default function Home() {
                 </h2>
                 <p className="mt-6 text-lg text-muted-foreground">
                   With over 15 years of experience in various artistic mediums,
-                  I&apos;ve dedicated my life to creating and teaching art. My work
-                  has been featured in galleries across the country, and I&apos;ve
-                  helped hundreds of students discover their unique artistic
-                  voice.
+                  I&apos;ve dedicated my life to creating and teaching art. My
+                  work has been featured in galleries across the country, and
+                  I&apos;ve helped hundreds of students discover their unique
+                  artistic voice.
                 </p>
                 <p className="mt-4 text-lg text-muted-foreground">
                   My teaching philosophy centers on personalized instruction
-                  that adapts to your learning style and goals. Whether you&apos;re a
-                  complete beginner or looking to refine advanced techniques, my
-                  lessons will help you grow as an artist.
+                  that adapts to your learning style and goals. Whether
+                  you&apos;re a complete beginner or looking to refine advanced
+                  techniques, my lessons will help you grow as an artist.
                 </p>
                 <div className="mt-8">
                   <Button variant="outline" asChild>
@@ -145,14 +147,16 @@ export default function Home() {
                   className="group relative aspect-square overflow-hidden rounded-lg"
                 >
                   <Image
-                    src={`/placeholder.svg?height=400&width=400&text=Artwork ${item}`}
+                    src={`https://picsum.photos/400/400?text=Artwork ${item}`}
+                    // src={`/placeholder.svg?height=400&width=400&text=Artwork ${item}`}
                     alt={`Artwork ${item}`}
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-black/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
+                  {/* uncomment for text hover effect */}
+                  {/* <div className="absolute inset-0 bg-black/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
                     <span className="text-white font-medium">View Artwork</span>
-                  </div>
+                  </div> */}
                 </div>
               ))}
             </div>
@@ -198,7 +202,7 @@ export default function Home() {
                     </li>
                     <li className="flex items-center">
                       <span className="mr-2 text-primary">✓</span>
-                      <span>All materials provided</span>
+                      <span>Materials list provided</span>
                     </li>
                   </ul>
                   <div className="mt-6">
@@ -223,7 +227,7 @@ export default function Home() {
                   <ul className="mt-4 space-y-2">
                     <li className="flex items-center">
                       <span className="mr-2 text-primary">✓</span>
-                      <span>Small class sizes (max 6)</span>
+                      <span>Small class sizes (max 4)</span>
                     </li>
                     <li className="flex items-center">
                       <span className="mr-2 text-primary">✓</span>
@@ -231,7 +235,7 @@ export default function Home() {
                     </li>
                     <li className="flex items-center">
                       <span className="mr-2 text-primary">✓</span>
-                      <span>All materials provided</span>
+                      <span>Materials list provided</span>
                     </li>
                   </ul>
                   <div className="mt-6">
@@ -313,9 +317,10 @@ export default function Home() {
                     <div className="flex flex-col items-center text-center">
                       <div className="relative h-16 w-16 overflow-hidden rounded-full">
                         <Image
-                          src={`/placeholder.svg?height=100&width=100&text=${testimonial.name.charAt(
-                            0
-                          )}`}
+                          src={`https://picsum.photos/100/100`}
+                          // src={`/placeholder.svg?height=100&width=100&text=${testimonial.name.charAt(
+                          //   0
+                          // )}`}
                           alt={testimonial.name}
                           fill
                           className="object-cover"
@@ -363,7 +368,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="bg-background text-foreground rounded-lg p-6">
+              {/* <div className="bg-background text-foreground rounded-lg p-6">
                 <form className="space-y-4">
                   <div className="grid gap-4 sm:grid-cols-2">
                     <div className="space-y-2">
@@ -447,7 +452,7 @@ export default function Home() {
                     Submit Inquiry
                   </Button>
                 </form>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -491,7 +496,7 @@ export default function Home() {
       <footer className="border-t bg-muted/50 py-8">
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
           <div className="flex items-center gap-2 font-serif text-xl font-bold">
-            <span className="text-primary">ArtistName</span>
+            <span className="text-primary">Ariadne</span>
             <span className="text-muted-foreground">Studio</span>
           </div>
           <nav className="flex gap-6">
@@ -527,7 +532,7 @@ export default function Home() {
             </Link>
           </nav>
           <div className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} ArtistName Studio. All rights reserved.
+            © {new Date().getFullYear()} Ariadne Studio. All rights reserved.
           </div>
         </div>
       </footer>
