@@ -147,8 +147,7 @@ export default function Home() {
                   className="group relative aspect-square overflow-hidden rounded-lg"
                 >
                   <Image
-                    src={`https://picsum.photos/400/400?text=Artwork ${item}`}
-                    // src={`/placeholder.svg?height=400&width=400&text=Artwork ${item}`}
+                    src={`/images/gallery-${item}.jpg?text=Artwork ${item}`}
                     alt={`Artwork ${item}`}
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -160,9 +159,10 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <div className="mt-12 flex justify-center">
+            {/* <div className="mt-12 flex justify-center">
+              //  if we decide to add a full gallery page later on
               <Button variant="outline">View Full Collection</Button>
-            </div>
+            </div> */}
           </div>
         </section>
 
